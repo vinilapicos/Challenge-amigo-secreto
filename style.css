@@ -116,13 +116,22 @@ button {
 }
 
 .button-add {
-    background-color: var(--color-tertiary);
+    background-color: rgb(244,164,96);
     color: var(--color-text);
-    border-radius: 0 25px 25px 0;
+    border-radius: 0px 0px 0px 0px;
+}
+.button-lista{
+    border-radius: 0px 25px 25px 0px;
+    color: var(--color-text);
+    background-color: rgb(250,128,114);
+}
+
+.button-lista:hover {
+    background-color: rgb(247, 86, 68);
 }
 
 .button-add:hover {
-    background-color: #a1a1a1;
+    background-color: rgb(255, 146, 22);
 }
 
 /* Listas */
