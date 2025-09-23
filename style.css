@@ -131,6 +131,20 @@ button {
     pointer-events: none;
 }
 
+.button-limpar:disabled{
+    background-color: gray;
+    pointer-events: none;
+}
+
+.button-draw:disabled{
+    background-color: gray;
+    pointer-events: none; 
+}
+
+.button-limpar:hover{
+    background-color: var(--color-button-hover);
+}
+
 .button-lista:hover {
     background-color: rgb(247, 86, 68);
 }
@@ -167,8 +181,25 @@ ul {
     font-size: 16px;
 }
 
+.button-limpar{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-top: 15px;
+    padding: 5px 30px;
+    color: var(--color-white);
+    background-color: var(--color-button);
+    font-size: 16px;
+}
+
 .button-draw img {
     margin-right: 40px;
+}
+
+.button-limpar img {
+    margin-right: 42px;
+    margin-left: 6px;
+    width: 18%;
 }
 
 .button-draw:hover {

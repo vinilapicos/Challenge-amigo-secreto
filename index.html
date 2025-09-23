@@ -29,11 +29,15 @@
             <ul id="resultado" class="result-list" aria-live="polite">teste</ul>
 
             <div class="button-container">
-                <button class="button-draw" onclick="sortearAmigo()" aria-label="Sortear amigo secreto">
+                <button class="button-draw" id ="sortearAmigo" onclick="sortearAmigo()" aria-label="Sortear amigo secreto" disabled>
                     <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
                     Sortear amigo
                 </button>
-                <button class="button-limpar" id="limparLista" onclick="limparLista()">Limpar Lista</button>
+
+                <button class="button-limpar" id="limparLista" onclick="limparLista()" disabled>
+                    <img src="assets/lixeira-botao.png" alt="Ícone para limpar">
+                    Limpar Lista
+                </button>
             </div>
         </section>
     </main>

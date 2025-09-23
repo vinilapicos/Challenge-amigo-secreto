@@ -3,13 +3,15 @@ let amigo;
 let listaAmigos = [];
 let listaHtml = document.getElementById('listaAmigos');
 let botaoExibir = document.getElementById('exibirLista');
+let botaoLimpar = document.getElementById('limparLista');
+let botaoSortear = document.getElementById('sortearAmigo');
 
 function adicionarAmigo(){
         let amigo = document.getElementById('amigo').value;
         if (amigo != ""){
             listaAmigos.push(amigo);
             document.getElementById('amigo').value = "";
-            botaoExibir.removeAttribute('disabled');
+            habilitarBotao();
         }else {
             alert("O campo não pode estar vazio!");
         }
@@ -27,5 +29,17 @@ function exibirLista(){
 function limparLista(){
     listaHtml.innerHTML = '';
     listaAmigos = [];
+    desabilitarBotao();
+}
+
+function habilitarBotao(){
+    botaoExibir.removeAttribute('disabled');
+    botaoLimpar.removeAttribute('disabled');
+    botaoSortear.removeAttribute('disabled');
+}
+
+function desabilitarBotao(){
     botaoExibir.setAttribute('disabled', 'true');
+    botaoLimpar.setAttribute('disabled', 'true');
+    botaoSortear.setAttribute('disabled', 'true');
 }
