@@ -5,6 +5,7 @@ let listaHtml = document.getElementById('listaAmigos');
 let botaoExibir = document.getElementById('exibirLista');
 let botaoLimpar = document.getElementById('limparLista');
 let botaoSortear = document.getElementById('sortearAmigo');
+let resultadoAmigo = document.getElementById('resultado');
 
 function adicionarAmigo(){
         let amigo = document.getElementById('amigo').value;
@@ -28,8 +29,21 @@ function exibirLista(){
 
 function limparLista(){
     listaHtml.innerHTML = '';
+    resultadoAmigo.innerHTML = "";
     listaAmigos = [];
     desabilitarBotao();
+}
+
+function sortearAmigo(){
+    if (listaAmigos.length == 0){
+        desabilitarBotao();
+        resultadoAmigo.innerHTML = "";
+    }   else{
+            let indiceAleatorio = parseInt(Math.random() * listaAmigos.length);
+            resultadoAmigo.innerHTML = listaAmigos[indiceAleatorio];
+            listaAmigos.splice(indiceAleatorio, 1);
+            exibirLista();
+            }
 }
 
 function habilitarBotao(){
