@@ -126,6 +126,11 @@ button {
     background-color: rgb(250,128,114);
 }
 
+.button-lista:disabled{
+    background-color: gray;
+    pointer-events: none;
+}
+
 .button-lista:hover {
     background-color: rgb(247, 86, 68);
 }

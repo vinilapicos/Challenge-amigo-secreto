@@ -22,10 +22,10 @@
             <div class="input-wrapper">
                 <input type="text" id="amigo" class="input-name" placeholder="Digite um nome">
                 <button class="button-add" onclick="adicionarAmigo()">Adicionar</button>
-                <button class="button-lista" onclick="exibirAmigo()">Mostrar Lista</button>
+                <button class="button-lista" id="exibirLista" onclick="exibirLista()" disabled>Mostrar Lista</button>
             </div>
            
-            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list">teste</ul>
+            <ul id="listaAmigos" class="name-list" aria-labelledby="listaAmigos" role="list"></ul>
             <ul id="resultado" class="result-list" aria-live="polite">teste</ul>
 
             <div class="button-container">
@@ -33,6 +33,7 @@
                     <img src="assets/play_circle_outline.png" alt="Ícone para sortear">
                     Sortear amigo
                 </button>
+                <button class="button-limpar" id="limparLista" onclick="limparLista()">Limpar Lista</button>
             </div>
         </section>
     </main>
