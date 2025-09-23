@@ -17,7 +17,11 @@
 
 body {
     height: 100vh;
-    background-color: var(--color-primary);
+    background-image: url('assets/Background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -42,7 +46,7 @@ body {
 /* Seção de entrada */
 .input-section {
     flex: 60%;
-    background-color: var(--color-secondary);
+    background-color: antiquewhite;
     border: 1px solid #000;
     border-radius: 64px 64px 0 0;
     display: flex;
@@ -54,18 +58,19 @@ body {
 
 /* Títulos */
 .main-title {
+    background-color: antiquewhite;
     font-size: 48px;
     font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
-    color: var(--color-white);
+    color: var(--color-black);
 }
 
 .section-title {
     font-family: "Inter", serif;
     font-size: 36px;
     font-weight: 700;
-    color: var(--color-primary);
+    color: var(--color-black);
     margin: 10px 0;
     text-align: center;
 }

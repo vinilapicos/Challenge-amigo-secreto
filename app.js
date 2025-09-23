@@ -9,7 +9,7 @@ let resultadoAmigo = document.getElementById('resultado');
 
 function adicionarAmigo(){
         let amigo = document.getElementById('amigo').value;
-        if (amigo != ""){
+        if (amigo.trim() !== ""){
             listaAmigos.push(amigo);
             document.getElementById('amigo').value = "";
             habilitarBotao();
